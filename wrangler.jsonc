@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "edaat-platform",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "pages_build_output_dir": "./dist",
+  "d1_databases": [
+    { "binding": "DB", "database_name": "edaat-db", "database_id": "local-dev-placeholder", "migrations_dir": "migrations" }
+  ],
+  "r2_buckets": [
+    { "binding": "MEDIA", "bucket_name": "edaat-media" }
+  ],
+  "vars": {
+    "APP_NAME": "إضاءات",
+    "RECORDING_TTL_HOURS": "48",
+    "JITSI_DOMAIN": "",
+    "JITSI_APP_ID": "edaat"
+  }
+}

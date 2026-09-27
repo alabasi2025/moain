@@ -1,0 +1,3 @@
+# انسخ هذا الملف إلى .dev.vars للتطوير المحلي، وفي الإنتاج استخدم: wrangler pages secret put <NAME>
+JITSI_APP_SECRET=change-me-long-random-secret
+CRON_SECRET=change-me-another-secret

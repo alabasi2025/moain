@@ -1,0 +1,11 @@
+{
+  "rules": [
+    {
+      "id": "delete-recordings-after-3-days",
+      "enabled": true,
+      "conditions": { "prefix": "recordings/" },
+      "deleteObjectsTransition": { "condition": { "type": "Age", "maxAge": 259200 } },
+      "abortMultipartUploadsTransition": { "condition": { "type": "Age", "maxAge": 86400 } }
+    }
+  ]
+}
